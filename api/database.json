@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Lauren Baxter",
+      "age": 10
+    },
+    {
+      "id": 2,
+      "name": "Sam Jones",
+      "age": 11
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Ms. Ashley",
+      "photoUrl": ""
+    },
+    {
+    "id": 2,  
+    "name": "Mr. Luke"
+    }
+  ],
+  "studios": [
+    {
+      "id": 1,
+      "name": "Studio A"
+    },
+    {
+      "id": 2,
+      "name": "Studio B"
+    },
+    {
+      "id": 3,
+      "name": "Studio C"
+    }
+  ]
+}
