@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/SchoolOfDance';
 import * as serviceWorker from './serviceWorker';
+
 import SchoolOfDance from './components/SchoolOfDance'
+
 import { BrowserRouter as Router } from "react-router-dom"
+
 
 ReactDOM.render(
     <Router>

@@ -1,22 +1,52 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #09d3ac;
-  }
+/* Import the google web fonts you want to use */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa%7CPatua+One');
+/*Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-family: 'Comfortaa', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6 {
+ font-family: 'Patua One', serif;
+ letter-spacing: 2px;
+}
+.center {
+ text-align: center;
+}
+.welcome--btns {
+display: flex;
+justify-content: space-evenly;
+margin-top:50px;
+}
+p {
+ margin-bottom: 1.5em;
+ color: #d6fcff;
+ color: darkslateblue;
+}
+strong {
+ font-weight: bold;
+}
+address {
+ margin: 0 0 1.5em;
+}
+img {
+ display: block;
+ border: 0;
+ width: 50%;
+ height: auto;
+ margin:40px auto;
+}
+.section-content {
+ padding: 1.4em;
+}
+.container-cards {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
