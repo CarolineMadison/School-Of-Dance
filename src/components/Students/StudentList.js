@@ -20,13 +20,28 @@ import React, { Component } from 'react'
         })
     }
 
+    deleteStudent = id => {
+        StudentManager.delete(id)
+        .then(() => {
+          StudentManager.getAll()
+          .then((newStudents) => {
+            this.setState({
+                students: newStudents
+            })
+          })
+        })
+      }
+
     render(){
         console.log("StudentLIST: Render");
 
         return(
             <div className="container-cards">
                 {this.state.students.map(student => 
-                  <StudentCard key={student.id} student={student} />
+                  <StudentCard 
+                  key={student.id} 
+                  student={student}
+                  deleteStudent={this.deleteStudent} />
                 )}
             </div>
         )

@@ -14,7 +14,8 @@ class StudentCard extends Component {
           <h2><span className="card-studentName">{this.props.student.firstName} {this.props.student.lastName}</span></h2>
           <p>{this.props.student.birthdate}</p>
           <p>{this.props.student.focus}</p>
-          <Link to={`/students/${this.props.student.id}`}><button>Details</button></Link>
+          <Link to={`/students/${this.props.student.id}`}><button>Student Profile</button></Link>
+          <button type="button" onClick={() => this.props.deleteStudent(this.props.student.id)}>Unenroll</button>
         </div>
       </div>
     );

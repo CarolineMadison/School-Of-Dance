@@ -17,7 +17,12 @@
       "id": 2,
       "firstName": "Sam",
       "lastName": "Jones",
+      "parents": "Ross and Mary Jones",
+      "email": "jones@hotmail.com",
+      "mobile": "270-837-0287",
       "birthdate": "10/31/2010",
+      "grade": "4th",
+      "school": "St. Joseph",
       "focus": "Ballet, Hip Hop, Tap",
       "photoUrl": "https://www.maxpixel.net/static/photo/2x/Kids-Gymnastics-Boy-Training-Sports-Dance-2581002.jpg"
     },
@@ -25,7 +30,12 @@
       "id": 3,
       "firstName": "Erin",
       "lastName": "James",
-      "birthdate": "4/17/2009",
+      "parents": "Monica James",
+      "email": "james@hotmail.com",
+      "mobile": "615-736-7368",
+      "birthdate": "10/31/2010",
+      "grade": "4th",
+      "school": "St. Joseph",
       "focus": "Ballet, Hip Hop, Lyrical",
       "photoUrl": "https://www.waterfordsportspartnership.ie/wp-content/uploads/2018/12/kids-2580991_960_720.jpg"
     },
@@ -33,7 +43,12 @@
       "id": 4,
       "firstName": "Alex",
       "lastName": "James",
-      "birthdate": "4/17/2009",
+      "parents": "Monica James",
+      "email": "james@hotmail.com",
+      "mobile": "270-875-2123",
+      "birthdate": "10/31/2010",
+      "grade": "4th",
+      "school": "St. Joseph",
       "focus": "Ballet, Tap, Lyrical",
       "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVpjt7B_gP74UdfBmNDsw24Qg_cuqe_kcpOKErnOElfFRnvnUfw"
     },
@@ -42,6 +57,11 @@
       "firstName": "Georgia",
       "lastName": "Patterson",
       "birthdate": "7/19/2014",
+      "parents": "Damon Patterson",
+      "email": "patterson@hotmail.com",
+      "mobile": "615-927-3710",
+      "grade": "K",
+      "school": "Cumberland Trace",
       "focus": "Ballet, Tumbling, Tap",
       "photoUrl": "https://windfalldancers.files.wordpress.com/2012/11/screen-shot-2017-08-17-at-12-48-45-pm.png"
     },
@@ -49,15 +69,25 @@
       "id": 6,
       "firstName": "Henry",
       "lastName": "Foster",
-      "birthdate": "6/23/2012",
+      "parents": "Grant and Katie Foster",
+      "email": "jones@hotmail.com",
+      "mobile": "502-319-9238",
+      "birthdate": "10/31/2010",
+      "grade": "4th",
+      "school": "Homeschool",
       "focus": "Ballet, Tumbling, Tap",
       "photoUrl": "https://live.staticflickr.com/931/29693111888_a8fe9cf359_b.jpg"
     },
     {
       "id": 7,
-      "firstName": "Ira",
+      "firstName": "Matthew",
       "lastName": "Glass",
-      "birthdate": "7/19/2014",
+      "parents": "Jill Glass",
+      "email": "glass@gmail.com",
+      "mobile": "270-773-9108",
+      "birthdate": "12/25/2009",
+      "grade": "4th",
+      "school": "St. Paul",
       "focus": "Ballet, Tumbling, Tap",
       "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXuD21A4ZdUR-meTjIuukRWIiV6eZ0QFtShfA27Ah31zia3_MV"
     },
@@ -65,7 +95,12 @@
       "id": 8,
       "firstName": "Samantha",
       "lastName": "Villalobos",
-      "birthdate": "7/19/2014",
+      "parents": "Ross and Mary Jones",
+      "email": "villalobos@hotmail.com",
+      "mobile": "615-982-8967",
+      "birthdate": "10/30/2015",
+      "grade": "PreK",
+      "school": "Parents' Day Out",
       "focus": "Ballet, Tumbling, Tap",
       "photoUrl": "https://cdn.pixabay.com/photo/2017/02/23/05/55/girl-2091321_960_720.jpg"
     }
@@ -77,8 +112,8 @@
       "photoUrl": ""
     },
     {
-    "id": 2,  
-    "name": "Mr. Luke"
+      "id": 2,
+      "name": "Mr. Luke"
     }
   ],
   "studios": [
