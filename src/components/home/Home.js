@@ -8,7 +8,7 @@ class Home extends Component {
         <p>Martha Madison, Artistic Director</p>
       </div>
       <picture>
-        <img src={require('./JosephDanceApp.jpg')} />
+        <img src={require('./JosephDanceApp.jpg')} alt="boy" />
       </picture>
       <address>
         Pedigo Way

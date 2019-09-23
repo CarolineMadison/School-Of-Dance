@@ -1,7 +1,7 @@
 import { Route } from 'react-router-dom'
 import React, { Component } from 'react'
 import Home from './home/Home'
-import StudentCard from './Students/StudentCard'
+import StudentList from './Students/StudentList'
 
 import StudioCard from './Studios/StudioCard'
 import TeacherCard from './Teachers/TeacherCard'
@@ -17,7 +17,7 @@ class ApplicationViews extends Component {
           return <Home />
         }} />
         <Route path="/students" render={(props) => {
-          return <StudentCard />
+          return <StudentList />
         }} />
         <Route path="/studios" render={(props) => {
           return <StudioCard />
