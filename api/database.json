@@ -109,11 +109,29 @@
     {
       "id": 1,
       "name": "Ms. Ashley",
-      "photoUrl": ""
+      "fullName": "Ashley Grace",
+      "classes": "Ballet, Lyrical, Hip Hop, Jazz",
+      "email": "Ashley@schoolofdance.com",
+      "mobile": "270-662-0378",
+      "photoUrl": "https://images.pexels.com/photos/1844040/pexels-photo-1844040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     },
     {
       "id": 2,
-      "name": "Mr. Luke"
+      "name": "Mr. Luke",
+      "fullName": "Luke Maddox",
+      "classes": "Ballet, Hip Hop",
+      "email": "Luke@schoolofdance.com",
+      "mobile": "270-762-54443",
+      "photoUrl": "https://images.unsplash.com/photo-1536129808005-fae894214c73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Ms. Martha",
+      "fullName": "Martha Madison",
+      "classes": "Ballet, Tap, Jazz, Primary",
+      "email": "Martha@schoolofdance.com",
+      "mobile": "270-842-7290",
+      "photoUrl": ""
     }
   ],
   "studios": [

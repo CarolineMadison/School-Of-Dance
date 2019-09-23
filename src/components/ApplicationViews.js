@@ -25,7 +25,7 @@ class ApplicationViews extends Component {
         <Route path="/studios" render={(props) => {
           return <StudioCard />
         }} />
-        <Route path="/teachers" render={(props) => {
+        <Route exact path="/teachers" render={(props) => {
           return <TeacherCard />
         }} />
         <Route path="/about" render={(props) => {

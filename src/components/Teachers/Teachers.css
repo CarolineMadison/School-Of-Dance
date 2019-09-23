@@ -1,0 +1,39 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background: #68736D;
+    margin-top: 2em;
+    flex: 0 1 24%;
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+    
+  .card-content p {
+    font-size: 80%;
+    color: antiquewhite;
+  }
+  
+  .content-studentName {
+    color: darkslategrey;
+  }
+  
+  .card button {
+    background-color: black;
+    border: none;
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding: .5em;
+    border-radius: 2px;
+    margin: .3em;
+    width: 50%;
+  }
+  
+  .card button:hover {
+    background-color: darkblue;
+  }
