@@ -4,7 +4,12 @@
       "id": 1,
       "firstName": "Lauren",
       "lastName": "Baxter",
+      "parents": "James and Kim Baxter",
+      "email": "baxter.kim@outlook.com",
+      "mobile": "270-842-0982",
       "birthdate": "12/13/2012",
+      "grade": "2nd",
+      "school": "Cumberland Trace",
       "focus": "Ballet, Jazz, Hip Hop",
       "photoUrl": "https://pixnio.com/free-images/2017/05/06/2017-05-06-09-54-05-e1494070044814-900x675.jpg"
     },
