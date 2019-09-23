@@ -1,20 +1,23 @@
-/* Import the google web fonts you want to use */
-@import url('https://fonts.googleapis.com/css?family=Comfortaa%7CPatua+One');
 /*Typography
 --------------------------------------------------------------*/
+body {
+  background-color: #130A00   
+}
+
 body,
 button,
 input,
 select,
 textarea {
     color: #404040;
-    font-family: 'Comfortaa', Arial, sans-serif;
+    font-family: 'courier new', sans-serif;
     font-size: 14px;
     line-height: 1.5;
 }
 h1,h2,h3,h4,h5,h6 {
- font-family: 'Patua One', serif;
+ font-family: 'courier new', serif;
  letter-spacing: 2px;
+ background-color: antiquewhite;
 }
 .center {
  text-align: center;
@@ -25,20 +28,22 @@ justify-content: space-evenly;
 margin-top:50px;
 }
 p {
- margin-bottom: 1.5em;
+ margin-bottom: 1.5 em;
  color: #d6fcff;
- color: darkslateblue;
+ color: antiquewhite;
+ text-align: center;
 }
 strong {
  font-weight: bold;
 }
 address {
  margin: 0 0 1.5em;
+ text-align: center;
 }
 img {
  display: block;
  border: 0;
- width: 50%;
+ width: 30%;
  height: auto;
  margin:40px auto;
 }

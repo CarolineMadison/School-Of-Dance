@@ -1,0 +1,42 @@
+.site-title {
+  text-align: center
+}
+
+header {
+    font-family: 'courier new', serif;
+    letter-spacing: 2px;
+    background-color: antiquewhite;
+}
+
+.headerContainer {
+  padding-top: 5px;
+}
+
+small {
+  font-size: 65%;
+}
+
+nav .container {
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+nav .container li {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  color: cornsilk;
+  box-sizing: border-box;
+  background-color: #727F8C;
+  list-style-type: none;
+}
+
+nav .container a {
+  color: cornsilk;
+}
+
+nav .container a:hover {
+  color: maroon;
+}
