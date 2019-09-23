@@ -4,25 +4,18 @@
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     background: #68736D;
-    margin-bottom: 2em;
+    margin-top: 2em;
     flex: 0 1 24%;
   }
   
   .card-content {
-    padding: .5em;
     text-align: center;
+    
   }
-  
-  .card-content h3 {
-    margin-top: 0;
-    margin-bottom: .5em;
-    font-weight: bold;
-    color: rgb(43, 112, 241);
-  }
-  
+    
   .card-content p {
     font-size: 80%;
-    color: darkslategrey;
+    color: antiquewhite;
   }
   
   .content-studentName {
