@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./Students.css"
 
 class StudentCard extends Component {
 
@@ -7,10 +8,11 @@ class StudentCard extends Component {
       <div className="card">
         <div className="card-content">
           <picture>
-            <img src={require('./SchoolOfDanceMainPhoto.png')} alt="teacher" />
+            <img src={this.props.student.photoUrl} alt="teacher" />
           </picture>
-          <h2>Name: <span className="card-petname">{this.props.student.name}</span></h2>
-          <p>age: {this.props.student.age}</p>
+          <h2><span className="card-studentName">{this.props.student.firstName} {this.props.student.lastName}</span></h2>
+          <p>{this.props.student.birthdate}</p>
+          <p>{this.props.student.focus}</p>
         </div>
       </div>
     );

@@ -2,13 +2,35 @@
   "students": [
     {
       "id": 1,
-      "name": "Lauren Baxter",
-      "age": 10
+      "firstName": "Lauren",
+      "lastName": "Baxter",
+      "birthdate": "12/13/2012",
+      "focus": "Ballet, Jazz, Hip Hop",
+      "photoUrl": "https://pixnio.com/free-images/2017/05/06/2017-05-06-09-54-05-e1494070044814-900x675.jpg"
     },
     {
       "id": 2,
-      "name": "Sam Jones",
-      "age": 11
+      "firstName": "Sam",
+      "lastName": "Jones",
+      "birthdate": "10/31/2010",
+      "focus": "Ballet, Hip Hop, Tap",
+      "photoUrl": "https://www.maxpixel.net/static/photo/2x/Kids-Gymnastics-Boy-Training-Sports-Dance-2581002.jpg"
+    },
+    {
+      "id": 3,
+      "firstName": "Erin",
+      "lastName": "James",
+      "birthdate": "4/17/2009",
+      "focus": "Ballet, Hip Hop, Lyrical",
+      "photoUrl": "https://www.waterfordsportspartnership.ie/wp-content/uploads/2018/12/kids-2580991_960_720.jpg"
+    },
+    {
+      "id": 4,
+      "firstName": "Alex",
+      "lastName": "James",
+      "birthdate": "4/17/2009",
+      "focus": "Ballet, Tap, Lyrical",
+      "photoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVpjt7B_gP74UdfBmNDsw24Qg_cuqe_kcpOKErnOElfFRnvnUfw"
     }
   ],
   "teachers": [
