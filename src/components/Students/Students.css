@@ -10,7 +10,6 @@
   
   .card-content {
     text-align: center;
-    
   }
     
   .card-content p {
@@ -23,16 +22,15 @@
   }
   
   .card button {
-    background-color: cornflowerblue;
+    background-color: black;
     border: none;
-    color: cornsilk;
+    color: antiquewhite;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
+    font-size: 15px;
     padding: .5em;
     border-radius: 2px;
-    margin: .1em;
+    margin: .3em;
     width: 100%;
   }
   

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./Students.css"
+import { Link } from "react-router-dom";
 
 class StudentCard extends Component {
 
@@ -13,6 +14,7 @@ class StudentCard extends Component {
           <h2><span className="card-studentName">{this.props.student.firstName} {this.props.student.lastName}</span></h2>
           <p>{this.props.student.birthdate}</p>
           <p>{this.props.student.focus}</p>
+          <Link to={`/students/${this.props.student.id}`}><button>Details</button></Link>
         </div>
       </div>
     );

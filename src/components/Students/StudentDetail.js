@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import StudentManager from '../../modules/StudentManager';
-import './StudentDetail.css'
 
 class StudentDetail extends Component {
 
