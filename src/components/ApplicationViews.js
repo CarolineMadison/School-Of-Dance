@@ -6,6 +6,7 @@ import StudentDetail from './Students/StudentDetail'
 import StudioCard from './Studios/StudioCard'
 import TeacherCard from './Teachers/TeacherCard'
 import About from './About/About'
+import TeacherList from './Teachers/TeacherList'
 
 
 class ApplicationViews extends Component {
@@ -25,8 +26,8 @@ class ApplicationViews extends Component {
         <Route path="/studios" render={(props) => {
           return <StudioCard />
         }} />
-        <Route exact path="/teachers" render={(props) => {
-          return <TeacherCard />
+        <Route path="/teachers" render={(props) => {
+          return <TeacherList />
         }} />
         <Route path="/about" render={(props) => {
           return <About />

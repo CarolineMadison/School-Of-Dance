@@ -21,7 +21,7 @@ class TeacherDetail extends Component {
         classes: teacher.parents,
         email: teacher.email,
         mobile: teacher.mobile,
-        photo: teacher.photoUrl
+        photo: teacher.photo
       });
     });
   }

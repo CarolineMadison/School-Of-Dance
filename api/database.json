@@ -113,7 +113,7 @@
       "classes": "Ballet, Lyrical, Hip Hop, Jazz",
       "email": "Ashley@schoolofdance.com",
       "mobile": "270-662-0378",
-      "photoUrl": "https://images.pexels.com/photos/1844040/pexels-photo-1844040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+      "photo": "https://images.pexels.com/photos/1844040/pexels-photo-1844040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     },
     {
       "id": 2,
@@ -122,7 +122,7 @@
       "classes": "Ballet, Hip Hop",
       "email": "Luke@schoolofdance.com",
       "mobile": "270-762-54443",
-      "photoUrl": "https://images.unsplash.com/photo-1536129808005-fae894214c73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+      "photo": "https://images.unsplash.com/photo-1536129808005-fae894214c73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
     },
     {
       "id": 3,
@@ -131,7 +131,7 @@
       "classes": "Ballet, Tap, Jazz, Primary",
       "email": "Martha@schoolofdance.com",
       "mobile": "270-842-7290",
-      "photoUrl": ""
+      "photo": "https://bloximages.chicago2.vip.townnews.com/bgamplifier.com/content/tncms/assets/v3/editorial/a/80/a802ec70-8a33-5aca-9a52-76f4bf3baa21/4f63d6f7c9c91.image.jpg"
     }
   ],
   "studios": [
