@@ -7,6 +7,7 @@ import StudioCard from './Studios/StudioCard'
 import TeacherCard from './Teachers/TeacherCard'
 import About from './About/About'
 import TeacherList from './Teachers/TeacherList'
+import TeacherDetail from './Teachers/TeacherDetail'
 
 
 class ApplicationViews extends Component {
@@ -26,8 +27,11 @@ class ApplicationViews extends Component {
         <Route path="/studios" render={(props) => {
           return <StudioCard />
         }} />
-        <Route path="/teachers" render={(props) => {
+        <Route exact path="/teachers" render={(props) => {
           return <TeacherList />
+        }} />
+        <Route path="/teachers/:teacherId(\d+)" render={(props) => {
+          return <TeacherDetail teacherId={parseInt(props.match.params.teacherId)} />
         }} />
         <Route path="/about" render={(props) => {
           return <About />
