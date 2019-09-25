@@ -31,6 +31,14 @@ class TeacherList extends Component {
     render() {
 
         return (
+            <>
+            <section className="section-content">
+                <button type="button"
+                    className="btn"
+                    onClick={() => { this.props.history.push("/teachers/new") }}>
+                    Hire a New Teacher
+                </button>
+            </section>
             <div className="container-cards">
                 {this.state.teachers.map(teacher =>
                     <TeacherCard
@@ -39,6 +47,7 @@ class TeacherList extends Component {
                         deleteTeacher={this.deleteTeacher} />
                 )}
             </div>
+            </>
         )
     }
 }

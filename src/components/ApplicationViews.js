@@ -4,10 +4,11 @@ import Home from './home/Home'
 import StudentList from './Students/StudentList'
 import StudentDetail from './Students/StudentDetail'
 import StudioCard from './Studios/StudioCard'
-import TeacherCard from './Teachers/TeacherCard'
 import About from './About/About'
 import TeacherList from './Teachers/TeacherList'
 import TeacherDetail from './Teachers/TeacherDetail'
+import StudentForm from './Students/StudentForm'
+import TeacherForm from './Teachers/TeacherForm'
 
 
 class ApplicationViews extends Component {
@@ -19,19 +20,25 @@ class ApplicationViews extends Component {
           return <Home />
         }} />
         <Route exact path="/students" render={(props) => {
-          return <StudentList />
+          return <StudentList {...props} />
         }} />
         <Route path="/students/:studentId(\d+)" render={(props) => {
-          return <StudentDetail studentId={parseInt(props.match.params.studentId)} />
+          return <StudentDetail studentId={parseInt(props.match.params.studentId)} {...props} />
+        }} />
+        <Route path="/students/new" render={(props) => {
+          return <StudentForm {...props} />
         }} />
         <Route path="/studios" render={(props) => {
           return <StudioCard />
         }} />
         <Route exact path="/teachers" render={(props) => {
-          return <TeacherList />
+          return <TeacherList {...props} />
         }} />
         <Route path="/teachers/:teacherId(\d+)" render={(props) => {
           return <TeacherDetail teacherId={parseInt(props.match.params.teacherId)} />
+        }} />
+        <Route path="/teachers/new" render={(props) => {
+          return <TeacherForm {...props} />
         }} />
         <Route path="/about" render={(props) => {
           return <About />

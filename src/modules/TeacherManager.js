@@ -12,5 +12,14 @@ export default {
         method: "DELETE"
     })
     .then(result => result.json())
-  }
+  },
+  post(newTeacher) {
+    return fetch(`${remoteURL}/teachers`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newTeacher)
+    }).then(data => data.json())
+}
 }

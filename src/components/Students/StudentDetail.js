@@ -13,7 +13,8 @@ class StudentDetail extends Component {
       grade: "",
       school: "",
       focus: "",
-      photo: ""
+      photo: "",
+      loadingStatus: true,
   }
 
   componentDidMount(){
@@ -31,9 +32,17 @@ class StudentDetail extends Component {
         grade: student.grade,
         school: student.school,
         focus: student.focus,
-        photo: student.photoUrl
+        photo: student.photoUrl,
+        loadingStatus: false,
       });
     });
+  }
+
+  handleDelete = () => {
+    //invoke the delete function in AnimalManger and re-direct to the animal list.
+    this.setState({loadingStatus: true})
+    StudentManager.delete(this.props.studentId)
+    .then(() => this.props.history.push("/students"))
   }
 
   render() {

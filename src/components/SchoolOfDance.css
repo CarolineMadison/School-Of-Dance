@@ -46,6 +46,7 @@ img {
  width: 30%;
  height: auto;
  margin:40px auto;
+ border-radius: 5px;
 }
 .section-content {
  padding: 1.4em;

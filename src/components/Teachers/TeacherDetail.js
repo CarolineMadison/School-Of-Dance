@@ -9,7 +9,8 @@ class TeacherDetail extends Component {
     classes: "",
     email: "",
     mobile: "",
-    photo: ""
+    photo: "",
+    loadingStatus: true,
   }
 
   componentDidMount(){
@@ -21,9 +22,17 @@ class TeacherDetail extends Component {
         classes: teacher.parents,
         email: teacher.email,
         mobile: teacher.mobile,
-        photo: teacher.photo
+        photo: teacher.photo,
+        loadingStatus: false,
       });
     });
+  }
+
+  handleDelete = () => {
+    //invoke the delete function in AnimalManger and re-direct to the animal list.
+    this.setState({loadingStatus: true})
+    TeacherManager.delete(this.props.teacherId)
+    .then(() => this.props.history.push("/teachers"))
   }
 
   render() {
@@ -37,6 +46,7 @@ class TeacherDetail extends Component {
             <p>{this.state.classes}</p>
             <p>{this.state.email}</p>
             <p>{this.state.mobile}</p>
+            {/* <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Discharge</button> */}
         </div>
       </div>
     );
