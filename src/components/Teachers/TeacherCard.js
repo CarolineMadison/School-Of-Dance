@@ -12,7 +12,7 @@ class TeacherCard extends Component {
           <picture>
             <img src={this.props.teacher.photo} alt="teacher" />
           </picture>
-          <h2><span className="card-studentName">{this.props.teacher.name}</span></h2>
+          <h2><span className="card-studentName">{this.props.teacher.fullName}</span></h2>
           <p>{this.props.teacher.classes}</p>
           <Link to={`/teachers/${this.props.teacher.id}`}><button>Teacher Profile</button></Link>
           <button type="button" onClick={() => this.props.deleteTeacher(this.props.teacher.id)}>Remove</button>

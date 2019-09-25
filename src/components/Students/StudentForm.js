@@ -56,7 +56,7 @@ class StudentForm extends Component {
         }
     };
 
-    render(){
+    render() {
 
         return(
             <>
@@ -67,18 +67,18 @@ class StudentForm extends Component {
                         type="text"
                         required
                         onChange={this.handleFieldChange}
-                        id="studentFirstName"
+                        id="firstName"
                         placeholder="First Name"
                         />
-                        <label htmlFor="studentFirstName">First Name</label>
+                        <label htmlFor="firstName">First Name</label>
                         <input
                         type="text"
                         required
                         onChange={this.handleFieldChange}
-                        id="studentLastName"
+                        id="lastName"
                         placeholder="Last Name"
                         />
-                        <label htmlFor="studentLastName">Last Name</label>
+                        <label htmlFor="lastName">Last Name</label>
                         <input
                         type="text"
                         required
