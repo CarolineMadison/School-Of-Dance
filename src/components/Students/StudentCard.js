@@ -16,9 +16,11 @@ class StudentCard extends Component {
           <p>{this.props.student.focus}</p>
           <Link to={`/students/${this.props.student.id}`}><button>Student Profile</button></Link>
           <button type="button" onClick={() => this.props.deleteStudent(this.props.student.id)}>Unenroll</button>
+          <button type="button"
+            onClick={() => { this.props.history.push(`/students/${this.props.student.id}/edit`) }}>Edit Profile</button>
         </div>
       </div>
     );
   }
 }
-  export default StudentCard;
+export default StudentCard;

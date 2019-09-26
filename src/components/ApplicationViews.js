@@ -3,12 +3,13 @@ import React, { Component } from 'react'
 import Home from './home/Home'
 import StudentList from './Students/StudentList'
 import StudentDetail from './Students/StudentDetail'
-import StudioCard from './Studios/StudioCard'
-import About from './About/About'
+import StudioList from './Studios/StudioList'
+// import About from './About/About'
 import TeacherList from './Teachers/TeacherList'
 import TeacherDetail from './Teachers/TeacherDetail'
 import StudentForm from './Students/StudentForm'
 import TeacherForm from './Teachers/TeacherForm'
+import StudentEditForm from './Students/StudentEditForm'
 
 
 class ApplicationViews extends Component {
@@ -22,14 +23,14 @@ class ApplicationViews extends Component {
         <Route exact path="/students" render={(props) => {
           return <StudentList {...props} />
         }} />
-        <Route path="/students/:studentId(\d+)" render={(props) => {
+        <Route exact path="/students/:studentId(\d+)" render={(props) => {
           return <StudentDetail studentId={parseInt(props.match.params.studentId)} {...props} />
         }} />
         <Route path="/students/new" render={(props) => {
           return <StudentForm {...props} />
         }} />
-        <Route path="/studios" render={(props) => {
-          return <StudioCard />
+        <Route exact path="/studios" render={(props) => {
+          return <StudioList {...props} />
         }} />
         <Route exact path="/teachers" render={(props) => {
           return <TeacherList {...props} />
@@ -40,9 +41,13 @@ class ApplicationViews extends Component {
         <Route path="/teachers/new" render={(props) => {
           return <TeacherForm {...props} />
         }} />
-        <Route path="/about" render={(props) => {
+        <Route path="/students/:studentId(\d+)/edit" render={props => {
+            return <StudentEditForm {...props} />
+          }}
+        />
+        {/* <Route path="/about" render={(props) => {
           return <About />
-        }} />
+        }} /> */}
       </React.Fragment>
     )
   }

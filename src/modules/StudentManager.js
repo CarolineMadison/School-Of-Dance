@@ -20,6 +20,15 @@ export default {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(newStudent)
-    }).then(data => data.json())
-}
+    }).then(data => data.json())  
+  },
+  update(editedStudent) {
+    return fetch(`${remoteURL}/students/${editedStudent.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedStudent)
+    }).then(data => data.json());
+  }
 }

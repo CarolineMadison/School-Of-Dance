@@ -49,7 +49,9 @@ class StudentList extends Component {
                     <StudentCard
                         key={student.id}
                         student={student}
-                        deleteStudent={this.deleteStudent} />
+                        deleteStudent={this.deleteStudent} 
+                        {...this.props}
+                        />
                 )}
             </div>
             </>

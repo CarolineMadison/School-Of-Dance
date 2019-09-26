@@ -19,7 +19,7 @@ class NavBar extends Component {
             <li><Link className="nav-link" to="/students">Students</Link></li>
             <li><Link className="nav-link" to="/studios">Studios</Link></li>
             <li><Link className="nav-link" to="/teachers">Teachers</Link></li>
-            <li><Link className="nav-link" to="/studios">About</Link></li>
+            {/* <li><Link className="nav-link" to="/studios">About</Link></li> */}
           </ul>
         </nav>
       </header>

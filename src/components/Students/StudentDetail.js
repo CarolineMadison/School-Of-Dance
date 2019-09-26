@@ -32,7 +32,7 @@ class StudentDetail extends Component {
         grade: student.grade,
         school: student.school,
         focus: student.focus,
-        photo: student.photoUrl,
+        photo: student.photo,
         loadingStatus: false,
       });
     });

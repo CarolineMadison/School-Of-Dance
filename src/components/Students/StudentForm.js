@@ -64,31 +64,10 @@ class StudentForm extends Component {
                 .then(() => this.props.history.push('/students'));
             }
         }
-    
-  
+    render() {
 
-// submitForm = () => {
-//     // step 1: save Image to Firebase
-//     const imagesRef = firebase.storage().ref('images');
-//     const childRef = imagesRef.child(`${this.state.username}-${Date.now()}`);
-//     childRef.put(this.state.photo)
-//         // step 2: get url from firebase
-//         .then(response => response.ref.getDownloadURL())
-//         // step 3: save everything to json server
-//         .then(url => {
-//             return saveProfile({
-//                 username: this.state.username,
-//                 about: this.state.about,
-//                 photoUrl: url
-//             });
-//         })
-//         .then(() => this.props.history.push('/'));
-// }
-
-render() {
-
-    return (
-        <>
+        return (
+            <>
             <form>
                 <fieldset>
                     <div className="formgrid">

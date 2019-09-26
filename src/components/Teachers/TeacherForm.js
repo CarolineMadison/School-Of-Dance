@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import TeacherManager from '../../modules/TeacherManager';
 import './TeacherForm.css'
+import * as firebase from 'firebase/app';
+import 'firebase/storage';
 
 class TeacherForm extends Component {
     state = {
@@ -29,16 +31,24 @@ class TeacherForm extends Component {
             {
             window.alert("Please complete all fields.");
         } else {
-            this.setState({ loadingStatus: true });
-            const teacher = {
+            // this.setState({ loadingStatus: true });
+            // step 1: save Image to Firebase
+            const imagesRef = firebase.storage().ref('images');
+            const childRef = imagesRef.child(`${this.state.name}-${Date.now()}`);
+            childRef.put(this.state.photo)
+            // step 2: get url from firebase
+            .then (response => response.ref.getDownloadURL())
+            // step 3: save everything to json server
+            .then (url => {
+            const newTeacher = {
                 fullName: this.state.fullName,
                 classes: this.state.classes,
                 email: this.state.email,
                 mobile: this.state.mobile,
-            };
-
-            // Create the teacher and redirect user to teacher list
-            TeacherManager.post(teacher)
+                photo: url
+            }
+                return TeacherManager.post(newTeacher)
+        })
             .then(() => this.props.history.push("/teachers"));
         }
     };
@@ -82,13 +92,19 @@ class TeacherForm extends Component {
                         placeholder="Mobile"
                         />
                         <label htmlFor="mobile">Mobile</label>
+                        <input
+                            type="file"
+                            placeholder="Student Photo"
+                            onChange={(e) => this.setState({ photo: e.target.files[0] })}
+                        />
+                        <label>Student Photo</label>
                     </div>
                     <div className="alignRight">
                         <button
                         type="button"
                         disabled={this.state.loadingStatus}
                         onClick={this.constructNewTeacher}
-                        >Add New Teacher</button>
+                        >Save</button>
                     </div>
                 </fieldset>
             </form>
