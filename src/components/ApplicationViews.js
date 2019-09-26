@@ -10,6 +10,7 @@ import TeacherDetail from './Teachers/TeacherDetail'
 import StudentForm from './Students/StudentForm'
 import TeacherForm from './Teachers/TeacherForm'
 import StudentEditForm from './Students/StudentEditForm'
+import TeacherEditForm from './Teachers/TeacherEditForm'
 
 
 class ApplicationViews extends Component {
@@ -35,14 +36,18 @@ class ApplicationViews extends Component {
         <Route exact path="/teachers" render={(props) => {
           return <TeacherList {...props} />
         }} />
-        <Route path="/teachers/:teacherId(\d+)" render={(props) => {
+        <Route exact path="/teachers/:teacherId(\d+)" render={(props) => {
           return <TeacherDetail teacherId={parseInt(props.match.params.teacherId)} />
         }} />
         <Route path="/teachers/new" render={(props) => {
           return <TeacherForm {...props} />
         }} />
         <Route path="/students/:studentId(\d+)/edit" render={props => {
-            return <StudentEditForm {...props} />
+          return <StudentEditForm {...props} />
+        }}
+        />
+        <Route path="/teachers/:teacherId(\d+)/edit" render={props => {
+            return <TeacherEditForm {...props} />
           }}
         />
         {/* <Route path="/about" render={(props) => {

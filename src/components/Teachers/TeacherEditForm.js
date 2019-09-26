@@ -1,13 +1,16 @@
 import React, { Component } from "react"
-import StudentManager from "../../modules/StudentManager"
-import "./StudentForm.css"
+import TeacherManager from "../../modules/TeacherManager"
+import "./TeacherForm.css"
 
-class StudentEditForm extends Component {
+class TeacherEditForm extends Component {
     //set the initial state
     state = {
-      animalName: "",
-      breed: "",
-      loadingStatus: true,
+      fullName: "",
+      classes: "",
+      email: "",
+      mobile: "",
+      photo: null,
+      loadingStatus: false,
     };
 
     handleFieldChange = evt => {
@@ -16,25 +19,31 @@ class StudentEditForm extends Component {
       this.setState(stateToChange)
     }
 
-    updateExistingAnimal = evt => {
+    updateExistingTeacher = evt => {
       evt.preventDefault()
       this.setState({ loadingStatus: true });
-      const editedAnimal = {
-        id: this.props.match.params.animalId,
-        name: this.state.animalName,
-        breed: this.state.breed
+      const editedTeacher = {
+        id: this.props.match.params.teacherId,
+        fullName: this.state.fullName,
+        classes: this.state.classes,
+        email: this.state.email,
+        mobile: this.state.mobile,
+        photo: this.state.photo
       };
 
-      AnimalManager.update(editedAnimal)
-      .then(() => this.props.history.push("/animals"))
+      TeacherManager.update(editedTeacher)
+      .then(() => this.props.history.push("/teachers"))
     }
 
     componentDidMount() {
-      AnimalManager.get(this.props.match.params.animalId)
-      .then(animal => {
+      TeacherManager.get(this.props.match.params.teacherId)
+      .then(teacher => {
           this.setState({
-            animalName: animal.name,
-            breed: animal.breed,
+            fullName: teacher.fullName,
+            classes: teacher.classes,
+            email: teacher.email,
+            mobile: teacher.mobile,
+            photo: teacher.photo,
             loadingStatus: false,
           });
       });
@@ -51,25 +60,47 @@ class StudentEditForm extends Component {
                 required
                 className="form-control"
                 onChange={this.handleFieldChange}
-                id="animalName"
-                value={this.state.animalName}
+                id="fullName"
+                value={this.state.fullName}
               />
-              <label htmlFor="animalName">Animal name</label>
+              <label htmlFor="fullName">Full Name</label>
 
               <input
                 type="text"
                 required
                 className="form-control"
                 onChange={this.handleFieldChange}
-                id="breed"
-                value={this.state.breed}
+                id="classes"
+                value={this.state.classes}
               />
-              <label htmlFor="breed">Breed</label>
+              <label htmlFor="breed">Classes</label>
+
+              <input
+                type="text"
+                required
+                className="form-control"
+                onChange={this.handleFieldChange}
+                id="email"
+                value={this.state.email}
+              />
+              <label htmlFor="email">Email</label>
+
+              <input
+                type="text"
+                required
+                className="form-control"
+                onChange={this.handleFieldChange}
+                id="mobile"
+                value={this.state.mobile}
+              />
+              <label htmlFor="breed">Mobile</label>
+
+
             </div>
             <div className="alignRight">
               <button
                 type="button" disabled={this.state.loadingStatus}
-                onClick={this.updateExistingAnimal}
+                onClick={this.updateExistingTeacher}
                 className="btn btn-primary"
               >Submit</button>
             </div>
@@ -80,4 +111,4 @@ class StudentEditForm extends Component {
     }
 }
 
-export default StudentEditForm
+export default TeacherEditForm

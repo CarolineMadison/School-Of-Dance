@@ -6,7 +6,7 @@ class TeacherCard extends Component {
 
   render() {
     return (
-     
+
       <div className="card">
         <div className="card-content">
           <picture>
@@ -16,10 +16,13 @@ class TeacherCard extends Component {
           <p>{this.props.teacher.classes}</p>
           <Link to={`/teachers/${this.props.teacher.id}`}><button>Teacher Profile</button></Link>
           <button type="button" onClick={() => this.props.deleteTeacher(this.props.teacher.id)}>Remove</button>
+          <button type="button"
+            onClick={() => { this.props.history.push(`/teachers/${this.props.teacher.id}/edit`) }}>Edit Profile</button>
+
         </div>
       </div>
-      
+
     );
   }
 }
-  export default TeacherCard;
+export default TeacherCard;

@@ -19,7 +19,7 @@ class TeacherDetail extends Component {
       this.setState({
         name: teacher.name,
         fullName: teacher.fullName,
-        classes: teacher.parents,
+        classes: teacher.classes,
         email: teacher.email,
         mobile: teacher.mobile,
         photo: teacher.photo,
@@ -46,7 +46,7 @@ class TeacherDetail extends Component {
             <p>{this.state.classes}</p>
             <p>{this.state.email}</p>
             <p>{this.state.mobile}</p>
-            {/* <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Discharge</button> */}
+            
         </div>
       </div>
     );

@@ -44,7 +44,9 @@ class TeacherList extends Component {
                     <TeacherCard
                         key={teacher.id}
                         teacher={teacher}
-                        deleteTeacher={this.deleteTeacher} />
+                        deleteTeacher={this.deleteTeacher} 
+                        {...this.props}
+                        />
                 )}
             </div>
             </>
