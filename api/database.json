@@ -1,5 +1,12 @@
 {
-  "administrator": [],
+  "admin": [
+    {
+      "id": 1,
+      "username": "Martha Madison",
+      "email": "marthamadison@dance.com",
+      "password": "dance" 
+    }
+  ],
   "students": [
     {
       "id": 1,

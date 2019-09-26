@@ -11,6 +11,7 @@ import StudentForm from './Students/StudentForm'
 import TeacherForm from './Teachers/TeacherForm'
 import StudentEditForm from './Students/StudentEditForm'
 import TeacherEditForm from './Teachers/TeacherEditForm'
+import Login from "./Authentication/Login";
 
 
 class ApplicationViews extends Component {
@@ -50,6 +51,7 @@ class ApplicationViews extends Component {
             return <TeacherEditForm {...props} />
           }}
         />
+        <Route path="/Login" component={Login} />
         {/* <Route path="/about" render={(props) => {
           return <About />
         }} /> */}
