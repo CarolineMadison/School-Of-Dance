@@ -35,11 +35,12 @@ class StudentForm extends Component {
             this.state.email === "" ||
             this.state.mobile === "" ||
             this.state.birthdate === "" ||
+            this.state.grade === "" ||
             this.state.school === "" ||
             this.state.focus === "") {
             window.alert("Please complete all fields.");
         } else {
-            // this.setState({ loadingStatus: true });
+            this.setState({ loadingStatus: true });
             // step 1: save Image to Firebase
             const imagesRef = firebase.storage().ref('images');
             const childRef = imagesRef.child(`${this.state.name}-${Date.now()}`);
@@ -55,6 +56,7 @@ class StudentForm extends Component {
                     email: this.state.email,
                     mobile: this.state.mobile,
                     birthdate: this.state.birthdate,
+                    grade: this.state.grade,
                     school: this.state.school,
                     focus: this.state.focus,
                     photo: url
@@ -153,7 +155,7 @@ class StudentForm extends Component {
                     <div className="alignRight">
                         <button
                             type="button"
-                            // disabled={this.state.loadingStatus}
+                            disabled={this.state.loadingStatus}
                             onClick={this.constructNewStudent}
                         >Enroll</button>
                     </div>

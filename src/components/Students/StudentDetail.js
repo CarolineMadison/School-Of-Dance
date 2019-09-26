@@ -50,7 +50,7 @@ class StudentDetail extends Component {
       <div className="card">
         <div className="card-content">
           <picture>
-            <img src={this.state.photo} />
+            <img src={this.state.photo} alt="student" />
           </picture>
             <h3><span style={{ color: 'darkslategrey' }}>{this.state.firstName} {this.state.lastName}</span></h3>
             <p>{this.state.parents}</p>

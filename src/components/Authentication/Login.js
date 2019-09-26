@@ -24,7 +24,7 @@ class Login extends Component {
         .then(results=>{
             if(results.length>0) {
                 sessionStorage.setItem("credentials", results[0].id)
-                this.props.history.push("/home");
+                this.props.history.push("/");
             } else {
                 alert("Incorrect username, email, or password")
             } 

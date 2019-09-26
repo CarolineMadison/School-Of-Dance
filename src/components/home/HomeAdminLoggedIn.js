@@ -1,19 +1,12 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom";
 import './Home.css'
 
-class Home extends Component {
+class HomeAdminLoggedIn extends Component {
   render() {
     return (
       <>
       <div>
         <p>Martha Madison, Artistic Director</p>
-      </div>
-      <div className="btn">
-        <Link to={`/login`}><button>Administrator Login</button></Link>
-      </div>
-      <div className="btn">
-        <Link to={`/registration`}><button>Register New Administrator</button></Link>
       </div>
       <picture>
         <img src={require('./JosephDanceApp.jpg')} alt="boy" />
@@ -27,4 +20,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default HomeAdminLoggedIn

@@ -1,10 +1,16 @@
 {
-  "admin": [
+  "admins": [
     {
       "id": 1,
-      "username": "Martha Madison",
+      "username": "Martha",
       "email": "marthamadison@dance.com",
-      "password": "dance" 
+      "password": "dance"
+    },
+    {
+      "username": "Joel",
+      "email": "joel@dance.com",
+      "password": "dancer",
+      "id": 2
     }
   ],
   "students": [
@@ -99,7 +105,8 @@
       "grade": "4th",
       "school": "St. Paul",
       "focus": "Ballet, Tumbling, Tap",
-      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXuD21A4ZdUR-meTjIuukRWIiV6eZ0QFtShfA27Ah31zia3_MV"
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXuD21A4ZdUR-meTjIuukRWIiV6eZ0QFtShfA27Ah31zia3_MV",
+      "loadingstatus": false
     },
     {
       "id": 8,
@@ -113,6 +120,20 @@
       "school": "Parents' Day Out",
       "focus": "Ballet, Tumbling, Tap",
       "photo": "https://cdn.pixabay.com/photo/2017/02/23/05/55/girl-2091321_960_720.jpg"
+    },
+    {
+      "id": 9,
+      "firstName": "Joseph",
+      "lastName": "Brownlee",
+      "parents": "Caroline",
+      "email": "caroline@gmail.com",
+      "mobile": "615-681-7778",
+      "birthdate": "03/10/2017",
+      "grade": "PreK",
+      "school": "Montessori",
+      "focus": "tumbling",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/school-of-dance.appspot.com/o/images%2Fundefined-1569523123071?alt=media&token=eb3b69f3-d520-4c48-b963-81340b4fcea8",
+      "loadingstatus": false
     }
   ],
   "teachers": [
@@ -136,11 +157,11 @@
     },
     {
       "id": 3,
-      "fullName": "Martha Sacrey Madison",
-      "classes": "Ballet, Tap, Jazz, Primary",
-      "email": "Martha@schoolofdance.com",
-      "mobile": "270-842-7290",
-      "photo": "https://bloximages.chicago2.vip.townnews.com/bgamplifier.com/content/tncms/assets/v3/editorial/a/80/a802ec70-8a33-5aca-9a52-76f4bf3baa21/4f63d6f7c9c91.image.jpg"
+      "fullName": "Martha Madison",
+      "classes": "Baby Dance, Ballet, Tap, Jazz, Performance",
+      "email": "martha@dance.com",
+      "mobile": "444-444-4443",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/school-of-dance.appspot.com/o/images%2Fundefined-1569523369913?alt=media&token=09e30884-84e8-4064-bd97-8fdd38e5f3b4"
     }
   ],
   "studios": [
