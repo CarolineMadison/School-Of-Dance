@@ -11,6 +11,30 @@
       "email": "joel@dance.com",
       "password": "dancer",
       "id": 2
+    },
+    {
+      "username": "Robert",
+      "email": "robert@dance.com",
+      "password": "robert",
+      "id": 3
+    },
+    {
+      "username": "Caroline",
+      "email": "caroline@gmail.com",
+      "password": "caroline",
+      "id": 4
+    },
+    {
+      "username": "Marie",
+      "email": "marie@gmail.com",
+      "password": "marie",
+      "id": 5
+    },
+    {
+      "username": "Madison",
+      "email": "madison@gmail.com",
+      "password": "Madison",
+      "id": 6
     }
   ],
   "students": [
@@ -120,20 +144,6 @@
       "school": "Parents' Day Out",
       "focus": "Ballet, Tumbling, Tap",
       "photo": "https://cdn.pixabay.com/photo/2017/02/23/05/55/girl-2091321_960_720.jpg"
-    },
-    {
-      "id": 9,
-      "firstName": "Joseph",
-      "lastName": "Brownlee",
-      "parents": "Caroline",
-      "email": "caroline@gmail.com",
-      "mobile": "615-681-7778",
-      "birthdate": "03/10/2017",
-      "grade": "PreK",
-      "school": "Montessori",
-      "focus": "tumbling",
-      "photo": "https://firebasestorage.googleapis.com/v0/b/school-of-dance.appspot.com/o/images%2Fundefined-1569523123071?alt=media&token=eb3b69f3-d520-4c48-b963-81340b4fcea8",
-      "loadingstatus": false
     }
   ],
   "teachers": [
@@ -156,12 +166,12 @@
       "photo": "https://images.unsplash.com/photo-1536129808005-fae894214c73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
     },
     {
-      "id": 3,
       "fullName": "Martha Madison",
-      "classes": "Baby Dance, Ballet, Tap, Jazz, Performance",
+      "classes": "Performance, Tap, Jazz, Ballet",
       "email": "martha@dance.com",
-      "mobile": "444-444-4443",
-      "photo": "https://firebasestorage.googleapis.com/v0/b/school-of-dance.appspot.com/o/images%2Fundefined-1569523369913?alt=media&token=09e30884-84e8-4064-bd97-8fdd38e5f3b4"
+      "mobile": "555-555-5555",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/school-of-dance.appspot.com/o/images%2Fundefined-1569528744018?alt=media&token=ea9058dd-9724-49f7-b77b-d6841b2107cd",
+      "id": 3
     }
   ],
   "studios": [
